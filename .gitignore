@@ -50,3 +50,34 @@ output/
 ehthumbs.db
 Thumbs.db
 data/frames/
+
+# Security - Credentials and secrets
+*.env
+*.env.*
+!.env.example
+.env.local
+.env.*.local
+secrets.json
+credentials.json
+config.local.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.cer
+*.crt
+id_rsa
+id_rsa.pub
+
+# Cloud provider credentials
+.aws/
+.azure/
+.gcp/
+.config/gcloud/
+
+# API keys and tokens (catch-all patterns)
+*secret*.txt
+*password*.txt
+*token*.txt
+*apikey*.txt
+*api_key*.txt
