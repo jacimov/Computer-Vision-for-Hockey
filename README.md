@@ -287,6 +287,24 @@ Contributions to the project are welcome! Key areas for improvement include:
 4. **Visualization Enhancements**: Creating more interactive and informative visualizations
 5. **Performance Optimization**: Improving processing speed and efficiency
 
+## Security
+
+This project has been scanned for exposed API keys and credentials. **No exposed secrets were found.**
+
+The repository:
+- ✅ Contains no hardcoded API keys or credentials
+- ✅ Uses only local computer vision models (no external API dependencies)
+- ✅ Has proper `.gitignore` configuration to prevent accidental credential commits
+- ✅ Includes `.env.example` template for future external service integration
+
+For detailed security scan results, see [SECURITY_SCAN_REPORT.md](SECURITY_SCAN_REPORT.md).
+
+If you plan to integrate external APIs or services:
+1. Store credentials in `.env` file (already excluded from git)
+2. Use environment variables in your code: `os.getenv('API_KEY')`
+3. Never commit credentials directly to the repository
+4. Refer to `.env.example` for template structure
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
